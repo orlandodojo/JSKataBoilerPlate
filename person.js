@@ -1,9 +1,7 @@
-function Person(){
+var Person = {};
 
-  this.age = function(){
-    var date = new Date();
-    return date.getFullYear() - this.yearOfBirth;
-  };
-
+Person.age = function(options){
+  var date = new Date();
+  return date.getFullYear() - options.yearOfBirth;
 }
 
