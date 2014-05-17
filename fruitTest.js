@@ -1,7 +1,3 @@
-// Tests
-mocha.setup('tdd');
-assert = chai.assert;
-
 suite('Fruit', function(){
   test('should store name', function(){
     var fruit = new Fruit();

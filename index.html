@@ -3,30 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Mocha</title>
-    <link rel="stylesheet" href="mocha.css">
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="lib/mocha.css">
   </head>
   <body>
     <div id="mocha"></div>
-    <script src="mocha.js"></script>
+    <script src="lib/mocha.js"></script>
     <script>mocha.setup('tdd')</script>
-    <script src="chai.js"></script>
+    <script src="lib/chai.js"></script>
     <script>assert = chai.assert</script>
+
     <!--<script>mocha.setup('bdd')</script>-->
     <!--<script src="Array.js"></script>-->
 
-    <!-- Example #1
-
-    <script src="fruit.js"></script>
-    <script src="fruitTest.js">
-    -->
+    <!--<script src="fruit.js"></script>
+    <script src="fruitTest.js"></script>-->
 
     <!-- Example #2 -->
     <script src="person.js"></script>
     <script src="personTest.js"></script>
 
+    <!--<script src="calculatorTest.js"></script>-->
+
     <script>
       mocha.run();
+    </script>
+
+    <script>
+      <!-- Live Reload -->
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
     </script>
   </body>
 </html>
